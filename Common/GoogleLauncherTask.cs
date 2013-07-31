@@ -7,7 +7,8 @@ namespace Common
         public void Show()
         {
             var uri = new Uri("http://www.google.com");
-            PlatformSupport<IPlatformImplementation>.Get().Launch(uri);
+            IPlatformLauncher platformLauncher = PlatformSupport<IPlatformLauncher>.Get();
+            platformLauncher.Launch(uri);
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Common.Platform
 {
-    public sealed class PlatformImplementation : IPlatformImplementation
+    public sealed class PlatformLauncher : IPlatformLauncher
     {
         public void Launch(Uri uri)
         {

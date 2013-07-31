@@ -2,7 +2,7 @@
 
 namespace Common
 {
-    public interface IPlatformImplementation
+    public interface IPlatformLauncher
     {
         void Launch(Uri url);
     }

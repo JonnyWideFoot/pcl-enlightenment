@@ -16,7 +16,7 @@ namespace Common
             if (_cached == null)
             {
                 // Starting from our core assembly, determine the matching enlightenment assembly (with the same version/strong name if applicable)
-                var enlightenmentAssemblyName = new AssemblyName(typeof(IPlatformImplementation).FullName)
+                var enlightenmentAssemblyName = new AssemblyName(typeof(IPlatformLauncher).FullName)
                 {
                     Name = "Common.Platform",
                 };
